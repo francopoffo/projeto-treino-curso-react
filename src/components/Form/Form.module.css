@@ -1,0 +1,24 @@
+.form {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    background-color: #CCC;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.label {
+    font-weight: 700;
+}
+
+.button {
+    margin-top: 6px;
+    width: 100px;
+    background-color: purple;
+    border: none;
+    border-radius: 8px;
+    color: #FDFDFD;
+    padding: 2px;
+}
