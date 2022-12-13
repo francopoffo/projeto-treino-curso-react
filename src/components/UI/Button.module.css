@@ -1,0 +1,14 @@
+.button {
+    width: fit-content;
+    font-weight: 700;
+    background-color: purple;
+    border: none;
+    border-radius: 8px;
+    color: #FDFDFD;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: rgb(204, 116, 204);
+}

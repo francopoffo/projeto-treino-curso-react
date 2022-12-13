@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import classes from "./Form.module.css";
+import Button from "../UI/Button";
 
 function Form(props) {
   const [enteredUser, setEnteredUser] = useState("");
@@ -20,6 +21,9 @@ function Form(props) {
       age: +enteredAge,
       id: Number(new Date()),
     };
+
+    if(enteredUser.trim().length === 0) {return}
+    if(+enteredAge < 1) {return}
     
 
     props.onSaveUserData(enteredData);
@@ -50,9 +54,9 @@ function Form(props) {
         id="age"
         onChange={ageChangeHandler}
       />
-      <button className={classes.button} type="submit">
+      <Button type="submit">
         Adicionar
-      </button>
+      </Button>
     </form>
   );
 }

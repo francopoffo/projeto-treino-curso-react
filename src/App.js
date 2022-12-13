@@ -11,13 +11,18 @@ function App() {
     setUsers((prevUsers) => {
       return [enteredData, ...prevUsers];
     });
-        
+  };
+
+  const removeUserHandler = (id) => {
+    const updatedUsers = [...users].filter((user) => user.id !== id);
+
+    setUsers(updatedUsers);
   };
 
   return (
     <div>
       <Form onSaveUserData={saveUserDataHandler}/>
-      <UserList users={users}/>
+      <UserList users={users} onRemoveUser={removeUserHandler}/>
     </div>
   );
 }

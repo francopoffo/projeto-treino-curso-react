@@ -1,0 +1,16 @@
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    background-color: #CCC;
+    height: 50px;
+    margin: 0;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    align-items: center;
+    width: 400px;
+}
